@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:text="Nhập thông tin mà bạn cần thay đổi:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:maxLines="1"
+        android:id="@+id/et_hoten_moi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Nhập họ và tên mới"
+        android:textSize="18sp" />
+
+    <EditText
+        android:maxLines="1"
+        android:maxLength="10"
+        android:id="@+id/et_sdt_moi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Nhập số điện thoại mới"
+        android:textSize="18sp" />
+
+    <EditText
+        android:maxLines="1"
+        android:id="@+id/et_email_moi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Nhập địa chỉ email mới"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_thoat_doi_thong_tin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/boder2"
+            android:text="Thoát" />
+
+        <Button
+            android:id="@+id/btn_xac_nhan_doi_thong_tin"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boder2"
+            android:text="Xác nhận" />
+    </LinearLayout>
+</LinearLayout>
