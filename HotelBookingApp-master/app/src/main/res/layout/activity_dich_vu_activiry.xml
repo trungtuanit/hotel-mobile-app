@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DichVuActiviry">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_dichvu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/colortoolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Dịch vụ"
+        app:titleTextColor="#FFFFFF" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vui lòng đăng ký trước các dịch vụ (nếu có)"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <CheckBox
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:text="Bữa sáng Buffet"
+                android:checked="false"
+                android:id="@+id/checkbox_buasang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </CheckBox>
+
+            <CheckBox
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:text="Dịch vụ Spa"
+                android:checked="false"
+                android:id="@+id/checkbox_spa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </CheckBox>
+
+            <CheckBox
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:text="Dịch vụ phòng họp"
+                android:checked="false"
+                android:id="@+id/checkbox_phonghop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </CheckBox>
+
+            <CheckBox
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:text="Dịch vụ giặt ủi quần áo"
+                android:checked="false"
+                android:id="@+id/checkbox_giatui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </CheckBox>
+
+            <CheckBox
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:text="Dịch vụ xe đưa đón"
+                android:checked="false"
+                android:id="@+id/checkbox_xe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </CheckBox>
+
+            <CheckBox
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:text="Dịch vụ phòng 24/24"
+                android:checked="false"
+                android:id="@+id/checkbox_dichvuphong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </CheckBox>
+
+            <CheckBox
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:text="Thu đổi ngoại tệ"
+                android:checked="false"
+                android:id="@+id/checkbox_doingoaite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </CheckBox>
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:id="@+id/bt_xacnhandichvu"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:background="@drawable/background_bt_chonphong"
+                android:text="Xác nhận"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="14sp">
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

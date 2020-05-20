@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Nhapchitietdanhgia">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarnhapdanhgia"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colortoolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Đánh giá"
+        app:titleTextColor="#FFFFFF" />
+    <TextView
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:text="Nhập đánh giá của bạn:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/namedg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Tên của bạn*"
+        android:textSize="16sp" />
+
+    <EditText
+
+        android:id="@+id/headerdg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Tiêu đề*"
+        android:textSize="16sp" />
+
+    <EditText
+
+        android:id="@+id/detaildg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Đánh giá của bạn*"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/markdg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Điểm cho khách sạn (thang điểm từ 1 đến 10)*"
+        android:inputType="number"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <Button
+            android:id="@+id/btnChoose"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/boder2"
+            android:text="Thêm ảnh"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+
+            android:textSize="18sp" />
+
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btnUpload"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/boder2"
+            android:text="Xác nhận"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+
+            android:textSize="18sp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="217dp" />
+</LinearLayout>

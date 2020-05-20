@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_mat_khau_cu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:maxLines="1"
+        android:hint="Nhập mật khẩu để tiếp tục"
+        android:password="true"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:background="@drawable/boder2"
+            android:id="@+id/btn_thoat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Thoát" />
+
+        <Button
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:background="@drawable/boder2"
+            android:id="@+id/btn_doi_thong_tin_tk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Đổi Thông tin" />
+
+        <Button
+            android:id="@+id/btn_doi_mat_khau"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/boder2"
+            android:text="Đổi mật khẩu"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>
